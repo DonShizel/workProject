@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Registeration</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+
+		}
+		header{
+			background: #009966;
+			height: 50px;
+			background-size: cover;
+			background-position: center;
+		}
+		ul{
+			float: right;
+			list-style-type: none;
+			margin-top: 20px;
+			margin-bottom: 20px;
+		}
+		ul li{
+			display: inline-block;
+		}
+		ul li a{
+			text-decoration: none;
+			color: white;
+			padding: 5px 20px;
+			border: 1px solid transparent;
+			transition: 0.6s;
+		}
+		ul li#active a{
+			background-color: cyan;
+			color: black;
+		}
+		ul li a:hover{
+			background-color: cyan;
+			color: black;
+		}
+		legend{ padding-left: 5px;
+			padding-right: 5px;
+			font-weight: 500px;
+			font-size: 50px;
+
+		}
+		#logo{
+			float: left;
+		}
+		/*.box{
+			padding-left: 20px;
+			padding-right: 200px;
+		}*/
+		fieldset{
+			text-align: center;
+			border: 10px solid #009966; 
+		
+		}
+		#form{
+			width: 1000px;
+			padding: 50px;
+			height: 10in;
+			position: absolute;
+			background: beige;
+			top:;
+			left: 50%;
+			margin-left: -500px;
+			margin-right: -5in;
+
+		}
+		.box input[type="text"],.box input[type="password"],.box input[type="date"]{
+			border: 0;
+			background: none;
+			display: block;
+			margin: 20px auto;
+			text-align: center;
+			border: 2px solid #3498db;
+			padding: 10px;
+			width: 350px;
+			outline: none;
+			color: #000;
+			border-radius: 8px;
+			transition: 0.35s;
+		}
+		span{
+			background: none;
+			display: block;
+			margin: 20px auto;
+			text-align: center;
+			padding: 14px;
+			width: 350px;
+			outline: none;
+			color: #000;
+			transition: 0.35s;
+		}
+		.box input[type="text"]:focus,.box input[type="password"]:focus{
+			width: 370px;
+			border-color: #2ecc71;
+			transition: 0.69s;
+		}
+		.box input[type="submit"]{
+			border: 0;
+			background: none;
+			display: block;
+			margin: 20px auto;
+			text-align: center;
+			border: 2px solid #2ecc71;
+			padding: 14px 40px;
+			outline: none;
+			color: solid black;
+			border-radius: 25px;
+			transition: 0.35s;
+			cursor: pointer;
+		}
+		.box input[type="submit"]:hover{
+			background: cyan;
+			color: #fff;
+		}
+		label{
+			text-align: left;
+		}
+	</style>
+
+</head>
+<body>
+	<header>
+		<div id="logo"><img src="logo.png" width="100px" height="50px" alt="Just here logo"></div>
+		<div>
+			<ul>
+				<li><a href="first.html">Home</a></li>
+				<li><a href="about-us.html">About Us</a></li>
+				<li><a href="contact-us.html">Contact Us</a></li>
+				<li><a href="">Accounts</a></li>
+			</ul>
+		</div>
+	</header>
+	
+	
+	<div id="form">
+		<form class="box" method="post" action="">
+			<fieldset>
+			<legend>Sign Up</LEGEND><br>
+			<label for="firstname">First Name</label>
+				<input type="text" name="" placeholder="First name">
+			<label for="lastname">Last Name</label>
+				<input type="text" name="" placeholder="Last name">
+			<label for="other names">Other Name(s)</label>
+				<input type="text" name="" placeholder="asdfg">
+			<label for="gender">Gender</label><br>
+				<span><input type="radio" name="gender">Male
+				<input type="radio" name="gender">Female</span>
+			<label for="dob">Date of Birth</label>
+				<input type="date" name="">
+			<label for="password">Enter a valid password</label>
+				<input type="password" name="" placeholder="Password">
+				<input type="submit" name="" value="Submit">
+	    	</fieldset>
+	    </form>
+	</div>
+</body>
+</html>
